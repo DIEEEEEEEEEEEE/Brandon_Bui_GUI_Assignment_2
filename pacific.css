@@ -1,0 +1,113 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+body {
+	background-color: #00569f;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 80%;
+	min-width: 600px;
+	background-image:url('ptrbackground.jpg');
+	background-position:center center;
+	/* background-repeat: no-repeat;
+	text-align: center;*/
+}
+
+nav ul {
+	font-size: 1.2em;
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+h2 {
+	color: #3399CC;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.resort {
+	color: #00569f;
+}
+
+img {
+	margin-right: 2%;
+}
+
+#wrapper {
+	background: white;
+	min-width: 600px;
+	width: 60%;
+	display: grid;
+	margin: 0 30%;
+	grid-template-areas: 
+		"header header"
+		"nav content"
+		"nav footer";
+}
+
+nav ul{
+	padding:2%;
+    list-style: none;
+}
+
+
+nav {
+	background-color: lightblue;
+	padding: 0px 20px;
+	float: left;
+	grid-area: nav;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+img {
+	float: left;
+	margin-right: 2%;
+}
+
+#content {
+	padding: 0% 5%;
+	grid-area: content;
+}
+
+#content ul {
+	list-style-image: url('marker.gif');
+	list-style-position:inside;
+}
+
+#contact {
+	font-size: 90%;
+
+}
+dt {
+	color: #000033;
+}
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	grid-area: footer;
+	height: auto;
+	padding-bottom: 3%;
+	padding-left: 3%;
+	font-size: 75%;
+}
+
+header {
+	background-color: #000032;
+	background-image:url('sunset.jpg');
+	background-position: right center;
+	background-repeat: no-repeat;
+	height:auto;
+	padding: 2%;
+	color: #FFFFFF;
+	grid-area: header;
+}
